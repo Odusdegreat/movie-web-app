@@ -22,7 +22,12 @@ function Movie() {
     <div>
       {movieList.map((movie) => (
         <img
-          style={{ width: "300px" }}
+          style={{
+            width: "300px",
+            height: "250px",
+            marginLeft: "10px",
+            marginTop: "30px",
+          }}
           src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
         />
       ))}
