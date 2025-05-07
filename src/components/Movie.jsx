@@ -21,7 +21,10 @@ function Movie() {
   return (
     <div>
       {movieList.map((movie) => (
-        <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} />
+        <img
+          style={{ width: "300px" }}
+          src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+        />
       ))}
     </div>
   );
